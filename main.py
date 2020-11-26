@@ -69,8 +69,7 @@ async def on_message(message):
             await message.channel.send('haha you suck')'''
     
     if message.content.startswith('!ola'):
-        embedVar = discord.Embed(title = "Heff", description = "I like to listen to "/next
-        +"the screams of my comrades as they burn", color = "fuchsia")  
+        embedVar = discord.Embed(title = "Heff", description = "I like to listen to the screams of my comrades as they burn", color = "fuchsia")  
         embedVar.addfield(name = "Age", value="2", inline=False)
         embedVar.addfield(name = "Occupation", value="burning comrades", inline=False)
         await message.channel.send(embed=embedVar)  
