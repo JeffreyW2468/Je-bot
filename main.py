@@ -22,7 +22,7 @@ async def on_message(message):
         await message.channel.send('https://www.youtube.com/watch?v=-BVxj-q7KOM')
         
     if message.content.startswith(';p'):
-        await message.channel.send('I am watching you '+'@'+str(message.author.name))
+        await message.channel.send('I am watching you {}'.format(message.author.mention))
     
     if message.content.startswith('box me'):
         await message.channel.send('Just copy this: '';pc user '+str(message.author.id))
