@@ -69,9 +69,10 @@ async def on_message(message):
             await message.channel.send('haha you suck')'''
     
     if message.content.startswith('!ola'):
-        embedVar = discord.Embed(title = "Heff", description = "I like to listen to the screams of my comrades as they burn", color = "fuchsia")  
-        embedVar.addfield(name = "Age", value="2", inline=False)
-        embedVar.addfield(name = "Occupation", value="burning comrades", inline=False)
+        embedVar = discord.Embed(title = "Heff", description = "I like to listen to the screams of my comrades as they burn", color = 0xf1c40f)  
+        embedVar.add_field(name = "Age", value="2", inline=False)
+        embedVar.add_field(name = "Occupation", value="burning comrades", inline=False)
+        embedVar.set_image(url="https://images-ext-1.discordapp.net/external/p49THdU6tTUwXLLgw-icuvMRi6_GaVb7MEJjMRPQj-s/https/play.pokemonshowdown.com/sprites/ani-shiny/moltres.gif")
         await message.channel.send(embed=embedVar)  
 
 client.run('Nzc5MDg3MTU5OTQ4NDc2NTI2.X7bbdQ._OcMe-MDDOJIK4tyMD3ThaLl6sU')
