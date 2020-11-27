@@ -1,11 +1,13 @@
 import discord
 import random as rand
 client = discord.Client()
-
+    
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
-
+    activity = discord.Game(name = "Pokemon Go", type = 3)
+    await client.change_presence(status=discord.Status.idle, activity=activity)
+    
 @client.event
 async def on_message(message):
     if message.author == client.user:
