@@ -26,8 +26,10 @@ async def on_message(message):
     
     #;p ping    
     if message.content.startswith(';p'):
+        '''if message.content.contain('c'):
+            return'''
         await message.channel.send('I am watching you {}'.format(message.author.mention))
-    
+        
     #box id
     if message.content.startswith('box me'):
         await message.channel.send('Just copy this: '';pc user '+str(message.author.id))
@@ -76,5 +78,8 @@ async def on_message(message):
         embedVar.add_field(name = "Occupation", value="burning comrades", inline=False)
         embedVar.set_image(url="https://images-ext-1.discordapp.net/external/p49THdU6tTUwXLLgw-icuvMRi6_GaVb7MEJjMRPQj-s/https/play.pokemonshowdown.com/sprites/ani-shiny/moltres.gif")
         await message.channel.send(embed=embedVar)  
+        
+    if message.content.startswith('penis'):
+        await message.channel.send('nono {} u naughty boi'.format(message.author.mention))
 
 client.run('Nzc5MDg3MTU5OTQ4NDc2NTI2.X7bbdQ._OcMe-MDDOJIK4tyMD3ThaLl6sU')
