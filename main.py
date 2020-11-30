@@ -53,6 +53,11 @@ async def on_message(message):
     if message.content.startswith("hey je let's play rock paper scissors"):
         await message.channel.send('ok u go first')
 
+
+    for l in 'YOU.SUCK...NO.SPAMMERS.ALLOWED':
+        if message.content.startswith('spam'):
+            await message.channel.send(l)
+        
     #actual rock paper scissors 
     if message.content.startswith('rock') or message.content.startswith('paper') or message.content.startswith('scissors'):
         randomscissorsint = rand.randint(1,3)
@@ -82,4 +87,18 @@ async def on_message(message):
     if message.content.startswith('penis'):
         await message.channel.send('nono {} u naughty boi'.format(message.author.mention))
 
+    if message.content.startswith('gn'):
+        await message.channel.send('https://www.youtube.com/watch?v=ykLDTsfnE5A&ab_channel=gruntstomp')
+        
+    if message.content.startswith('carl'):
+        await message.channel.send('https://www.youtube.com/watch?v=ntIFyvGdGMQ&ab_channel=suspiciouscarl')
+        
+    if message.content.startswith('anime pls'):
+        await message.channel.send('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvDhcBWIQYlh1tUAtslgBO5gueF05IWaD0Ww&usqp=CAU')
+        await message.channel.send('moshi moshi')
+        await message.channel.send('.')
+        await message.channel.send('doki')
+        await message.channel.send('doki')
+        await message.channel.send('watashi wa anime gorl kyun <3')
+        
 client.run('Nzc5MDg3MTU5OTQ4NDc2NTI2.X7bbdQ._OcMe-MDDOJIK4tyMD3ThaLl6sU')
