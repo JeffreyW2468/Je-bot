@@ -101,4 +101,5 @@ async def on_message(message):
         await message.channel.send('doki')
         await message.channel.send('watashi wa anime gorl kyun <3')
         
+        
 client.run('Nzc5MDg3MTU5OTQ4NDc2NTI2.X7bbdQ._OcMe-MDDOJIK4tyMD3ThaLl6sU')
