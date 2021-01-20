@@ -84,6 +84,12 @@ async def on_message(message):
         embedVar.set_image(url="https://images-ext-1.discordapp.net/external/p49THdU6tTUwXLLgw-icuvMRi6_GaVb7MEJjMRPQj-s/https/play.pokemonshowdown.com/sprites/ani-shiny/moltres.gif")
         await message.channel.send(embed=embedVar)  
         
+    if message.content.startswith('!halp'):
+        embedVar = discord.Embed(title = "Halp is here", description = "u not very resourceful", color = 0xf1c40f)  
+        embedVar.add_field(name = "commands:", value="nah figure it out yourself", inline=False)
+        embedVar.set_image(image="https://images-ext-1.discordapp.net/external/Vi3R4rejSWzuK7o6z8pQii_Q7_GI1w4JRzgPv9muebs/https/play.pokemonshowdown.com/sprites/ani-shiny/keldeo.gif")
+        await message.channel.send(embed=embedVar)
+        
     if message.content.startswith('penis'):
         await message.channel.send('nono {} u naughty boi'.format(message.author.mention))
 
