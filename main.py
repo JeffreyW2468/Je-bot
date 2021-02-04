@@ -90,6 +90,11 @@ async def on_message(message):
         embedVar.set_image(image="https://images-ext-1.discordapp.net/external/Vi3R4rejSWzuK7o6z8pQii_Q7_GI1w4JRzgPv9muebs/https/play.pokemonshowdown.com/sprites/ani-shiny/keldeo.gif")
         await message.channel.send(embed=embedVar)
         
+    if message.content.startswith('egog'):
+        embedVar = discord.Embed(title = "Annesh so fine and cute", description = "color", color = 'white')
+        embedVar.add_field(name = "https://tenor.com/view/easter-egg-dog-grooming-oval-gif-13997020")
+        await message.channel.send(embed=embedVar)
+        
     if message.content.startswith('penis'):
         await message.channel.send('nono {} u naughty boi'.format(message.author.mention))
 
