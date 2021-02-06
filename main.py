@@ -25,18 +25,16 @@ async def on_message(message):
         await message.channel.send('https://www.youtube.com/watch?v=-BVxj-q7KOM')
     
     #;p ping    
-    if message.content.startswith(';p'):
-        '''if message.content.contain('c'):
-            return'''
-        await message.channel.send('I am watching you {}'.format(message.author.mention))
+    '''if message.content.startswith(';p'):
+        await message.channel.send('I am watching you {}'.format(message.author.mention))'''
         
     #box id
     if message.content.startswith('box me'):
         await message.channel.send('Just copy this: '';pc user '+str(message.author.id))
     
     #;f notif    
-    if message.content.startswith(';f'):
-        await message.channel.send('ara ara the fish will not bite today ')
+    '''if message.content.startswith(';f'):
+        await message.channel.send('ara ara the fish will not bite today ')'''
     
     #je greet
     if message.content.startswith('how was your day je') or message.content.startswith('How was your day je'):
@@ -87,12 +85,13 @@ async def on_message(message):
     if message.content.startswith('!halp'):
         embedVar = discord.Embed(title = "Halp is here", description = "u not very resourceful", color = 0xf1c40f)  
         embedVar.add_field(name = "commands:", value="nah figure it out yourself", inline=False)
-        embedVar.set_image(image="https://images-ext-1.discordapp.net/external/Vi3R4rejSWzuK7o6z8pQii_Q7_GI1w4JRzgPv9muebs/https/play.pokemonshowdown.com/sprites/ani-shiny/keldeo.gif")
+        embedVar.set_image(url="https://images-ext-1.discordapp.net/external/Vi3R4rejSWzuK7o6z8pQii_Q7_GI1w4JRzgPv9muebs/https/play.pokemonshowdown.com/sprites/ani-shiny/keldeo.gif")
         await message.channel.send(embed=embedVar)
         
     if message.content.startswith('egog'):
-        embedVar = discord.Embed(title = "Annesh so fine and cute", description = "color", color = 'white')
-        embedVar.add_field(name = "https://tenor.com/view/easter-egg-dog-grooming-oval-gif-13997020")
+        embedVar = discord.Embed(title = "Annesh so fine and cute", description = "arf arf", color = 0xffffff)
+        embedVar.add_field(name = "Age", value="egg", inline=False)
+        embedVar.set_image(url="https://i.makeagif.com/media/7-27-2019/Q-giJk.gif")
         await message.channel.send(embed=embedVar)
         
     if message.content.startswith('penis'):
