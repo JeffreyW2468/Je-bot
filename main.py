@@ -94,6 +94,12 @@ async def on_message(message):
         embedVar.set_image(url="https://i.makeagif.com/media/7-27-2019/Q-giJk.gif")
         await message.channel.send(embed=embedVar)
         
+    if message.content.startswith('annesh'):
+        await message.channel.send('annesh show bigga bobs pls')
+        embedVar = discord.Embed(title = 'hay hay hay')
+        embedVar.set_image(url='https://media.discordapp.net/attachments/757105751691886666/808505131397283880/ezgif-1-9c7e70c0bd77.gif')
+        await message.channel.send(embed=embedVar)
+        
     if message.content.startswith('penis'):
         await message.channel.send('nono {} u naughty boi'.format(message.author.mention))
 
