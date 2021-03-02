@@ -1,5 +1,9 @@
 import discord
+import os
 import random as rand
+from dotenv import load_dotenv
+load_dotenv()
+discord_key = os.getenv("CLIENT_TOKEN")
 client = discord.Client()
     
 @client.event
@@ -118,4 +122,4 @@ async def on_message(message):
         await message.channel.send('watashi wa anime gorl kyun <3')
         
         
-client.run('Nzc5MDg3MTU5OTQ4NDc2NTI2.X7bbdQ._OcMe-MDDOJIK4tyMD3ThaLl6sU')
+client.run(discord_key)
