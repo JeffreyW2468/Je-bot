@@ -25,20 +25,12 @@ async def on_message(message):
     if message.content.startswith('buy boi') or message.content.startswith('Buy boi'):
         await message.channel.send('...')
         await message.channel.send('ayo')
-        await message.channel.send('peepeepoopoocheck')
+        await message.channel.send('pppupucheck')
         await message.channel.send('https://www.youtube.com/watch?v=-BVxj-q7KOM')
-    
-    #;p ping    
-    '''if message.content.startswith(';p'):
-        await message.channel.send('I am watching you {}'.format(message.author.mention))'''
         
     #box id
     if message.content.startswith('box me'):
         await message.channel.send('Just copy this: '';pc user '+str(message.author.id))
-    
-    #;f notif    
-    '''if message.content.startswith(';f'):
-        await message.channel.send('ara ara the fish will not bite today ')'''
     
     #je greet
     if message.content.startswith('how was your day je') or message.content.startswith('How was your day je'):
@@ -75,14 +67,11 @@ async def on_message(message):
             
         if (randomscissorsint == 3):
             await message.channel.send('scissors')
-            
-        '''if message.content.startswith('rock') and message.channel.send('paper'):
-            await message.channel.send('haha you suck')'''
     
     if message.content.startswith('!ola'):
-        embedVar = discord.Embed(title = "Heff", description = "I like to listen to the screams of my comrades as they burn", color = 0xf1c40f)  
+        embedVar = discord.Embed(title = "Heff", description = "I like to burn", color = 0xf1c40f)  
         embedVar.add_field(name = "Age", value="2", inline=False)
-        embedVar.add_field(name = "Occupation", value="burning comrades", inline=False)
+        embedVar.add_field(name = "Occupation", value="burning", inline=False)
         embedVar.set_image(url="https://images-ext-1.discordapp.net/external/p49THdU6tTUwXLLgw-icuvMRi6_GaVb7MEJjMRPQj-s/https/play.pokemonshowdown.com/sprites/ani-shiny/moltres.gif")
         await message.channel.send(embed=embedVar)  
         
@@ -93,19 +82,15 @@ async def on_message(message):
         await message.channel.send(embed=embedVar)
         
     if message.content.startswith('egog'):
-        embedVar = discord.Embed(title = "Annesh so fine and cute", description = "arf arf", color = 0xffffff)
+        embedVar = discord.Embed(title = "eggdog so fine and cute", description = "arf arf", color = 0xffffff)
         embedVar.add_field(name = "Age", value="egg", inline=False)
         embedVar.set_image(url="https://i.makeagif.com/media/7-27-2019/Q-giJk.gif")
         await message.channel.send(embed=embedVar)
         
     if message.content.startswith('annesh'):
-        await message.channel.send('annesh show bigga bobs pls')
         embedVar = discord.Embed(title = 'hay hay hay')
         embedVar.set_image(url='https://media.discordapp.net/attachments/757105751691886666/808505131397283880/ezgif-1-9c7e70c0bd77.gif')
         await message.channel.send(embed=embedVar)
-        
-    if message.content.startswith('penis'):
-        await message.channel.send('nono {} u naughty boi'.format(message.author.mention))
 
     if message.content.startswith('gn'):
         await message.channel.send('https://www.youtube.com/watch?v=ykLDTsfnE5A&ab_channel=gruntstomp')
@@ -113,13 +98,5 @@ async def on_message(message):
     if message.content.startswith('carl'):
         await message.channel.send('https://www.youtube.com/watch?v=ntIFyvGdGMQ&ab_channel=suspiciouscarl')
         
-    if message.content.startswith('anime pls'):
-        await message.channel.send('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvDhcBWIQYlh1tUAtslgBO5gueF05IWaD0Ww&usqp=CAU')
-        await message.channel.send('moshi moshi')
-        await message.channel.send('.')
-        await message.channel.send('doki')
-        await message.channel.send('doki')
-        await message.channel.send('watashi wa anime gorl kyun <3')
-        
-        
+       
 client.run(discord_key)
