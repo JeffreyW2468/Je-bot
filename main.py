@@ -2,6 +2,7 @@ import discord
 import os
 import random as rand
 import private
+from private import sussus_amogus
 from dotenv import load_dotenv
 load_dotenv()
 discord_key = os.getenv("CLIENT_TOKEN")
