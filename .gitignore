@@ -125,3 +125,5 @@ dmypy.json
 .pyre/
 private.py
 private.py
+bobs.py
+private.py
