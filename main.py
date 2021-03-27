@@ -100,7 +100,7 @@ async def on_message(message):
     if message.content.startswith('carl'):
         await message.channel.send('https://www.youtube.com/watch?v=ntIFyvGdGMQ&ab_channel=suspiciouscarl')
     
-    sussus_amogus()
+    await sussus_amogus()
         
        
 client.run(discord_key)
