@@ -1,8 +1,8 @@
 import discord
 import os
 import random as rand
-import private
-from private import sussus_amogus
+import bobs
+from bobs import sussus_amogus
 from dotenv import load_dotenv
 load_dotenv()
 discord_key = os.getenv("CLIENT_TOKEN")
@@ -100,7 +100,7 @@ async def on_message(message):
     if message.content.startswith('carl'):
         await message.channel.send('https://www.youtube.com/watch?v=ntIFyvGdGMQ&ab_channel=suspiciouscarl')
     
-    await sussus_amogus()
+    await sussus_amogus(message)
         
        
 client.run(discord_key)
