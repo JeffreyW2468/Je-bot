@@ -124,3 +124,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 bobs.py
+compromising_data.env
