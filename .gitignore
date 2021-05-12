@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 bobs.py
 compromising_data.env
+*.csv
