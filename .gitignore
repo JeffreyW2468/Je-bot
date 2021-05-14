@@ -123,6 +123,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-bobs.py
-compromising_data.env
-*.csv
+interessant.py
+#disco_data.csv
+#*.csv
