@@ -1,8 +1,8 @@
 import discord
 import os
 from datetime import datetime
-now = datetime.now().time().strftime("%H:%M:%S") # time object
-date = datetime.now().strftime("%Y-%m-%d") # date object
+now = datetime.now().time().strftime("%H:%M:%S") 
+date = datetime.now().strftime("%Y-%m-%d") 
 
 async def sussus_amogus(message):
     if message.content.startswith('anime pls'):
